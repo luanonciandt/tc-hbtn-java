@@ -2,12 +2,19 @@ public class PersonagemGame {
     private int saudeAtual;
     private String nome;
 
+    private String status;
+
     public int getSaudeAtual() {
         return saudeAtual;
     }
 
     public void setSaudeAtual(int saudeAtual) {
         this.saudeAtual = saudeAtual;
+        if (this.saudeAtual > 0) {
+            this.status = "vivo";
+        } else  {
+            this.status = "morto";
+        }
     }
 
     public String getNome() {
@@ -18,19 +25,23 @@ public class PersonagemGame {
         this.nome = nome;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
     public void tomarDano(int quantidadeDeDano) {
         if (this.saudeAtual >= quantidadeDeDano) {
-            this.saudeAtual -= quantidadeDeDano;
+            setSaudeAtual(this.getSaudeAtual() - quantidadeDeDano);
         } else {
-            this.saudeAtual = 0;
+            setSaudeAtual(0);
         }
     }
 
     public void receberCura(int quantidadeDeCura) {
         if (quantidadeDeCura <= 100 - this.saudeAtual) {
-            this.saudeAtual += quantidadeDeCura;
+            setSaudeAtual(this.getSaudeAtual() + quantidadeDeCura);
         } else {
-            this.saudeAtual = 100;
+            setSaudeAtual(100);
         }
     }
 
