@@ -40,7 +40,7 @@ public class Empregado {
                 "Bairro: " + getEndereco().getBairro() + "\n" +
                 "Cidade: " + getEndereco().getCidade() + "\n" +
                 "Pais: " + getEndereco().getPais();
-        System.out.println(informacoesEmpregado);
+        System.out.print(informacoesEmpregado);
 
     }
 }
