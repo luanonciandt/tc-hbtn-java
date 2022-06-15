@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/TiposPrimitivos_Wrapper/inteiro_positivo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x04/personagem" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x04/encapsulamento" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/0x04/metodos" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
