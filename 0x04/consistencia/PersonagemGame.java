@@ -4,12 +4,19 @@ public class PersonagemGame {
 
     private String status;
 
+    public PersonagemGame(int saudeAtual, String nome) {
+        setSaudeAtual(saudeAtual);
+        this.nome = nome;
+    }
+
     public int getSaudeAtual() {
         return saudeAtual;
     }
 
     public void setSaudeAtual(int saudeAtual) {
-        this.saudeAtual = saudeAtual;
+        if (saudeAtual >= 0 && saudeAtual <= 100) {
+            this.saudeAtual = saudeAtual;
+        }
         if (this.saudeAtual > 0) {
             this.status = "vivo";
         } else  {
@@ -22,7 +29,9 @@ public class PersonagemGame {
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        if (nome != null && nome.length() > 0) {
+            this.nome = nome;
+        }
     }
 
     public String getStatus() {
