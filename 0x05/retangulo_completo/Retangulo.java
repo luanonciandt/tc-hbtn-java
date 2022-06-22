@@ -20,4 +20,17 @@ public class Retangulo extends FormaGeometrica {
         if (largura < 0) throw new IllegalArgumentException("Altura deve ser maior ou igual a 0");
         this.altura = altura;
     }
+
+    @Override
+    public double area() {
+        return this.getLargura() * this.getAltura();
+    }
+
+    @Override
+    public String toString() {
+        return "[Retangulo] "
+                + String.format("%.2f", this.getLargura())
+                + " / " + String.format("%.2f", this.getAltura());
+    }
+
 }
