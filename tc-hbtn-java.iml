@@ -18,9 +18,9 @@
       <sourceFolder url="file://$MODULE_DIR$/0x01/pares" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x01/somar" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x02/divisao" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/0x02/quadrado" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x05/forma" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x05/heranca" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/0x05/quadrado" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x05/retangulo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x05/retangulo_completo" isTestSource="false" />
     </content>
