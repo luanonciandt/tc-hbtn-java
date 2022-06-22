@@ -21,6 +21,7 @@
       <sourceFolder url="file://$MODULE_DIR$/0x02/quadrado" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x05/forma" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x05/heranca" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/0x05/retangulo" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
