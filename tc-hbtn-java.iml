@@ -22,7 +22,7 @@
       <sourceFolder url="file://$MODULE_DIR$/0x05/quadrado" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x05/retangulo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x05/retangulo_completo" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/List/todo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Set_Map/analisador_frase" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
