@@ -33,14 +33,12 @@ public class Telefone {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Telefone telefone = (Telefone) o;
-        return getNumero().equals(telefone.getNumero());
+        Telefone outro = (Telefone) o;
+        return this.numero.equals(outro.getNumero());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getNumero());
+        return this.numero.charAt(3);
     }
 }
