@@ -1,9 +1,10 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Celular {
 
-    private List<Contato> contatos;
+    private ArrayList<Contato> contatos;
 
     public Celular() {
         this.contatos = new ArrayList<>();
