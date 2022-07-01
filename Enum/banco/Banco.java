@@ -54,7 +54,7 @@ public class Banco {
                 for (Cliente cliente : buscarAgencia(agencia).getClientes()) {
                     System.out.printf("Cliente: %s [%d]\n", cliente.getNome(), countCliente);
                     for (Double transacao : cliente.getTransacoes()) {
-                        System.out.printf(" [%d] valor %.2f\n", countTransacao, transacao);
+                        System.out.printf("  [%d] valor %.2f\n", countTransacao, transacao);
                         countTransacao++;
                     }
                     countTransacao = 1;
