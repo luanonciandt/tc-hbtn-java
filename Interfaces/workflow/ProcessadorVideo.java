@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ProcessadorVideo {
@@ -6,7 +6,7 @@ public class ProcessadorVideo {
     private List<CanalNotificacao> canais;
 
     public ProcessadorVideo() {
-        this.canais = new ArrayList<>();
+        this.canais = new LinkedList<>();
     }
 
     public void registrarCanal(CanalNotificacao canal) {
