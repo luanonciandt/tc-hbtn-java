@@ -1,12 +1,11 @@
-import java.util.LinkedList;
-import java.util.List;
+import java.util.ArrayList;
 
 public class ProcessadorVideo {
 
-    private List<CanalNotificacao> canais;
+    private ArrayList<CanalNotificacao> canais;
 
     public ProcessadorVideo() {
-        this.canais = new LinkedList<>();
+        this.canais = new ArrayList<>();
     }
 
     public void registrarCanal(CanalNotificacao canal) {
@@ -14,7 +13,7 @@ public class ProcessadorVideo {
     }
 
     public void processar(Video video) {
-        for (CanalNotificacao canal : canais) {
+        for (CanalNotificacao canal : this.canais) {
             canal.notificar(new Mensagem(video.getArquivo() + " - " + video.getFormatoVideo(), TipoMensagem.LOG));
         }
     }
