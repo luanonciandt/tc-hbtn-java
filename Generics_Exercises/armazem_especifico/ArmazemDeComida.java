@@ -1,3 +1,5 @@
+import java.util.function.Function;
+
 public class ArmazemDeComida extends Armazem<Comida> {
 
     public void adicionarAoInventario(String nome, Comida comida) {
