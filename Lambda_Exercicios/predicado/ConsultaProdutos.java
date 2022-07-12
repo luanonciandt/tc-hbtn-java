@@ -10,6 +10,7 @@ public class ConsultaProdutos {
                 produtosFiltrados.add(produto);
             }
         }
+            
         return produtosFiltrados;
     }
 }
