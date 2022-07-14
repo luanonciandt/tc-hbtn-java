@@ -18,13 +18,10 @@ public class SerializarEstudantes<T> {
         }
     }
 
-    public List<Estudante> desserializar() {
-        List<Estudante> desserializedObjects = new ArrayList<>();
+    public List<T> desserializar() {
+        List desserializedObjects = null;
         try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(nomeArquivo))) {
-            while(objectInputStream.available() > 0) {
-                Estudante e = (Estudante) objectInputStream.readObject();
-                desserializedObjects.add(e);
-            }
+            desserializedObjects = (List) objectInputStream.readObject();
         } catch (IOException | ClassNotFoundException e) {
             System.out.println("Nao foi possivel desserializar");
         }
