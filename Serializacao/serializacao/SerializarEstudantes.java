@@ -18,7 +18,7 @@ public class SerializarEstudantes<T> {
         }
     }
 
-    public List<T> desserializar() {
+    public List desserializar() {
         List desserializedObjects = null;
         try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(nomeArquivo))) {
             desserializedObjects = (List) objectInputStream.readObject();
