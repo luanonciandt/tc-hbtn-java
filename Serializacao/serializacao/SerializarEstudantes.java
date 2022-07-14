@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SerializarEstudantes<T> {
@@ -17,10 +18,13 @@ public class SerializarEstudantes<T> {
         }
     }
 
-    public List<T> desserializar() {
-        List<T> desserializedObjects = null;
+    public List<Estudante> desserializar() {
+        List<Estudante> desserializedObjects = new ArrayList<>();
         try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(nomeArquivo))) {
-            desserializedObjects = (List<T>) objectInputStream.readObject();
+            while(objectInputStream.available() > 0) {
+                Estudante e = (Estudante) objectInputStream.readObject();
+                desserializedObjects.add(e);
+            }
         } catch (IOException | ClassNotFoundException e) {
             System.out.println("Nao foi possivel desserializar");
         }
