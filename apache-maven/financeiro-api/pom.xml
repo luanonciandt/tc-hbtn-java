@@ -6,6 +6,8 @@
 
     <groupId>com.techcamps.financeiro</groupId>
     <artifactId>financeiro-api</artifactId>
+    <name>Projeto Financeiro Demo</name>
+    <description>Projeto Financeiro Demo usando Apache Maven Demo</description>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
