@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/TiposPrimitivos_Wrapper/inteiro_positivo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/apache-maven/financeiro-api/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/apache-maven/financeiro-api" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/0x00/nomenclatura" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
